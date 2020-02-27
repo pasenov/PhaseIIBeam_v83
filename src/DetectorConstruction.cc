@@ -582,8 +582,8 @@ G4VPhysicalVolume* DetectorConstruction::ConstructVolumes()
   det2VisAtt->SetVisibility(true);
   fLBox2->SetVisAttributes(det2VisAtt);
 
-  G4VisAttributes* det12VisAtt = new G4VisAttributes(G4Colour(1.0,1.0,1.0)); //White, to be set to blue
-  det12VisAtt->SetVisibility(false);
+  G4VisAttributes* det12VisAtt = new G4VisAttributes(G4Colour(0.0,0.0,1.0)); //White, to be set to blue
+  det12VisAtt->SetVisibility(true);
   fLBoxBPIX12->SetVisAttributes(det12VisAtt);
 
   G4VisAttributes* det34VisAtt = new G4VisAttributes(G4Colour(0.0,0.0,1.0)); //Blue
